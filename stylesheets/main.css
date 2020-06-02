@@ -19,6 +19,17 @@ html {
   font-size: 10px;
 }
 
+.body {
+  position: relative;
+}
+.header {
+  position: fixed;
+  top: 0px;
+  background-color: var(--light-color);
+  width: 100%;
+  display: block;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -66,6 +77,11 @@ html {
 }
 
 @media all and (min-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0px;
+  }
+
   .wrapper {
     display: flex;
     flex-direction: row;
